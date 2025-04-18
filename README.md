@@ -92,15 +92,16 @@ AI 허브의 한국어 멀티세션 대화 데이터셋은 다음과 같은 특�
 
 ## 1. 데이터 준비
 AI 허브에서 다운로드한 멀티세션 대화 데이터를 전처리하고 학습에 적합한 형태로 변환합니다.
-```bash
+```
+bash
 python extract_zip.py
 python prepare_dataset.py --session-level 2 3 4 --valid-ratio 0.1
 ```
 
 ## 2. 모델 학습
 최적화된 하이퍼파라미터를 사용하여 페르소나 챗봇 모델을 학습합니다.
-```bash
-python train_persona_chatbot.py --epochs 10 --batch-size 32 --lr 5e-5
+```
+bash python train_persona_chatbot.py --epochs 10 --batch-size 32 --lr 5e-5
 =======
 AI 허브에서 다운로드한 멀티세션 대화 데이터를 `data` 디렉토리에 압축 해제
 ```
@@ -121,14 +122,14 @@ python train_persona_chatbot.py
 
 ## 3. 대화 평가
 학습된 모델의 대화 품질을 자동 및 수동 평가 방식으로 검증합니다.
-```bash
-python evaluate.py --model-path checkpoints/best_model.pt
+```
+bash python evaluate.py --model-path checkpoints/best_model.pt
 ```
 
 ## 4. 대화 인터페이스 실행
 학습된 모델을 사용하여 대화형 인터페이스를 실행합니다.
-```bash
-python chat.py --model-path checkpoints/best_model.pt
+```
+bash python chat.py --model-path checkpoints/best_model.pt
 ```
 
 ## 모델 최적화 기법

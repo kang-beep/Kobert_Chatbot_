@@ -1,0 +1,54 @@
+# Python 가상환경
+.venv/
+venv/
+env/
+.env/
+
+# 데이터셋 파일
+data/
+datasets/
+
+# 학습된 모델 파일
+*.pt
+*.pth
+*.bin
+*.onnx
+*.model
+models/tokenizer/
+
+# 캐시 및 로그 파일
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.log
+
+# IDE 설정 파일
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 기타 불필요한 파일
+*.bak
+*.tmp
+*.temp
+.ipynb_checkpoints/
+wandb/
+runs/
+
+# 메타 데이터
+metastore_db/

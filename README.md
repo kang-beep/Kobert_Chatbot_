@@ -10,7 +10,6 @@
 ## 프로젝트 개요
 AI 허브에서 제공하는 한국어 멀티세션 대화 데이터셋을 활용하여 페르소나를 고려한 대화형 챗봇을 구현한 프로젝트입니다. 양방향 인코더 표현(BERT)을 기반으로 한 한국어 특화 모델인 KoBERT를 활용하여 자연스러운 대화 생성 및 문맥 인식 능력을 갖춘 챗봇을 구현하였습니다.
 
-<<<<<<< HEAD
 > **작성자**: 서강산  
 > **작성일**: 2024-10-18
 
@@ -54,7 +53,6 @@ AI 허브에서 제공하는 한국어 멀티세션 대화 데이터셋을 활�
 =======
 작성자: 서강산
 작성일: 2025-04-18
->>>>>>> origin/main
 
 ## 프로젝트 구조
 ```
@@ -120,7 +118,6 @@ python prepare_dataset.py --session-level 2 3 4 --valid-ratio 0.1
 페르소나 챗봇 모델 학습 
 ```
 python train_persona_chatbot.py
->>>>>>> origin/main
 ```
 
 ### 3. 대화 평가
@@ -160,19 +157,4 @@ python chat.py --model-path checkpoints/best_model.pt
 5. Pull Request를 생성합니다
 
 ## 라이센스
-<<<<<<< HEAD
 이 프로젝트는 MIT 라이센스를 따릅니다. 자세한 내용은 LICENSE 파일을 참조하세요.
-
-## 인용
-```bibtex
-@misc{seo2024kopersonachat,
-  author = {Seo, Gangsan},
-  title = {KoPersonaChat: KoBERT-based Persona-aware Chatbot for Korean},
-  year = {2024},
-  publisher = {GitHub},
-  howpublished = {\url{https://github.com/username/KoPersonaChat}}
-}
-```
-=======
-이 프로젝트는 MIT 라이센스를 따릅니다. 자세한 내용은 LICENSE 파일을 참조하세요. 
->>>>>>> origin/main

@@ -97,7 +97,7 @@ python extract_zip.py
 python prepare_dataset.py --session-level 2 3 4 --valid-ratio 0.1
 ```
 
-### 2. 모델 학습
+## 2. 모델 학습
 최적화된 하이퍼파라미터를 사용하여 페르소나 챗봇 모델을 학습합니다.
 ```bash
 python train_persona_chatbot.py --epochs 10 --batch-size 32 --lr 5e-5
@@ -107,25 +107,25 @@ AI 허브에서 다운로드한 멀티세션 대화 데이터를 `data` 디렉�
 python extract_zip.py
 ```
 
-### 2. 데이터셋 전처리
+## 2. 데이터셋 전처리
 라벨링 데이터를 전처리하여 학습용 데이터셋을 생성
 ```
 python prepare_dataset.py --session-level 2 3 4 --valid-ratio 0.1
 ```
 
-### 3. 모델 학습
+## 3. 모델 학습
 페르소나 챗봇 모델 학습 
 ```
 python train_persona_chatbot.py
 ```
 
-### 3. 대화 평가
+## 3. 대화 평가
 학습된 모델의 대화 품질을 자동 및 수동 평가 방식으로 검증합니다.
 ```bash
 python evaluate.py --model-path checkpoints/best_model.pt
 ```
 
-### 4. 대화 인터페이스 실행
+## 4. 대화 인터페이스 실행
 학습된 모델을 사용하여 대화형 인터페이스를 실행합니다.
 ```bash
 python chat.py --model-path checkpoints/best_model.pt

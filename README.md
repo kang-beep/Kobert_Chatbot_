@@ -10,6 +10,7 @@
 ## 프로젝트 개요
 AI 허브에서 제공하는 한국어 멀티세션 대화 데이터셋을 활용하여 페르소나를 고려한 대화형 챗봇을 구현한 프로젝트입니다. 양방향 인코더 표현(BERT)을 기반으로 한 한국어 특화 모델인 KoBERT를 활용하여 자연스러운 대화 생성 및 문맥 인식 능력을 갖춘 챗봇을 구현하였습니다.
 
+<<<<<<< HEAD
 > **작성자**: 서강산  
 > **작성일**: 2024-10-18
 
@@ -50,6 +51,10 @@ AI 허브에서 제공하는 한국어 멀티세션 대화 데이터셋을 활�
 |------|--------|---------|------------|----------|
 | KoBERT Baseline | 0.34 | 0.42 | 3.6/5.0 | 3.8/5.0 |
 | KoPersonaChat | 0.41 | 0.48 | 4.2/5.0 | 4.5/5.0 |
+=======
+작성자: 서강산
+작성일: 2025-04-18
+>>>>>>> origin/main
 
 ## 프로젝트 구조
 ```
@@ -88,6 +93,7 @@ AI 허브의 한국어 멀티세션 대화 데이터셋은 다음과 같은 특�
 ## 구현 방법
 
 ### 1. 데이터 준비
+<<<<<<< HEAD
 AI 허브에서 다운로드한 멀티세션 대화 데이터를 전처리하고 학습에 적합한 형태로 변환합니다.
 ```bash
 python extract_zip.py
@@ -98,6 +104,23 @@ python prepare_dataset.py --session-level 2 3 4 --valid-ratio 0.1
 최적화된 하이퍼파라미터를 사용하여 페르소나 챗봇 모델을 학습합니다.
 ```bash
 python train_persona_chatbot.py --epochs 10 --batch-size 32 --lr 5e-5
+=======
+AI 허브에서 다운로드한 멀티세션 대화 데이터를 `data` 디렉토리에 압축 해제
+```
+python extract_zip.py
+```
+
+### 2. 데이터셋 전처리
+라벨링 데이터를 전처리하여 학습용 데이터셋을 생성
+```
+python prepare_dataset.py --session-level 2 3 4 --valid-ratio 0.1
+```
+
+### 3. 모델 학습
+페르소나 챗봇 모델 학습 
+```
+python train_persona_chatbot.py
+>>>>>>> origin/main
 ```
 
 ### 3. 대화 평가
@@ -137,6 +160,7 @@ python chat.py --model-path checkpoints/best_model.pt
 5. Pull Request를 생성합니다
 
 ## 라이센스
+<<<<<<< HEAD
 이 프로젝트는 MIT 라이센스를 따릅니다. 자세한 내용은 LICENSE 파일을 참조하세요.
 
 ## 인용
@@ -149,3 +173,6 @@ python chat.py --model-path checkpoints/best_model.pt
   howpublished = {\url{https://github.com/username/KoPersonaChat}}
 }
 ```
+=======
+이 프로젝트는 MIT 라이센스를 따릅니다. 자세한 내용은 LICENSE 파일을 참조하세요. 
+>>>>>>> origin/main

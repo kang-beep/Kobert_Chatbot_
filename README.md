@@ -105,7 +105,9 @@ python prepare_dataset.py --session-level 2 3 4 --valid-ratio 0.1
 ```
 bash python train_persona_chatbot.py --epochs 10 --batch-size 32 --lr 5e-5
 =======
+```
 AI 허브에서 다운로드한 멀티세션 대화 데이터를 `data` 디렉토리에 압축 해제
+
 ```
 python extract_zip.py
 ```
